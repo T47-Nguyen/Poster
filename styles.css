@@ -226,7 +226,7 @@ a{
 
 /*CARP SECTION*/
 .carptask{
-    background-color: darkorange;
+    background-color: thistle;
 
 }
 
@@ -351,6 +351,29 @@ letter-spacing: 0.5rem;
 }
 
 /*codingtask*/
+.codingtask {
+    background-color: burlywood;
+}
+.codingtask .section-title{
+    font-size: 5rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+.codingtask .section-title span{
+    color: lightpink;
+}
+.codingtask .coding-reflection p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+letter-spacing: 0.5rem;
+}
+
 
 /*contact*/
 
