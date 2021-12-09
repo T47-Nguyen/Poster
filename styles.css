@@ -141,6 +141,26 @@ a{
         font-weight: 500px;
     }
 }
+
+.intro{
+    background-color: white;
+    background-image: url(./img/sky.jpg);
+    width: 1000px;
+    height: 1000px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    display: grid;
+    text-align: center;
+    padding: 20em;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: 50px;
+    z-index: 1;
+}
 /*portfolio*/
 
 .navbar-portfolio {
