@@ -1,5 +1,6 @@
 body{
     background-color: pink;
+    background-repeat: no-repeat;
 }
 
 /* header sytles */
@@ -9,6 +10,7 @@ header {
     padding: 10px 0px 10px 0px;
     display: flex;
     justify-content: space-between;
+    background-repeat: no-repeat;
     
     
 }
@@ -16,8 +18,14 @@ header {
 .logo{
     color: darkblue;
     font-weight: bold;
+   
 }
-
+.nav-container span{
+    color: white;
+}
+.nav-container .cta:hover{
+    color: darkblue;
+}
 ul{
     list-style-type: none;
     margin: 0;
@@ -29,6 +37,7 @@ a{
     color: white;
     display: block;
     padding: 0 1em;
+
 }
 
 
@@ -162,71 +171,14 @@ a{
     z-index: 1;
 }
 /*portfolio*/
-
-.navbar-portfolio {
-        display: flex; 
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-     }
-.navbar-portfolio {
-       display: flex; 
-       flex-wrap: wrap;
-       flex-direction: row;
-       justify-content: flex-end;
-    }
-.navbar-portfolio {
-        display: flex; 
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-     }
-.navbar-portfolio {
-        display: flex; 
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-     }
-.navbar-portfolio {
-        display: flex; 
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: flex-end;
-     }
-.navbar-portfolio {
-        display: flex; 
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: flex-start;
-     }
-.navbar-portfolio {
-        display: flex; 
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-     }
-.navbar-portfolio {
-        display: flex; 
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        justify-content: center;
-     }
-.navbar-portfolio {
-        display: flex; 
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: flex-start;
-     }
-
-.portfolio-li{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 5px;
-    margin: 0px 3px;
-    border: 1px solid gold;
-    border-radius: 8px;
-    background-color: aliceblue;
-
-}    
+.navbar-portfolio{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0 1em;   
+    display: flex;
+    justify-content: space-between;
+}
 
 .section-one {
     background-color: blueviolet;
@@ -246,7 +198,7 @@ a{
 
 /*CARP SECTION*/
 .carptask{
-    background-color: thistle;
+    background-color: white;
 
 }
 
@@ -260,7 +212,7 @@ a{
 .carptask .section-title{
     font-size: 5rem;
     font-weight: 300;
-    color: white;
+    color: darkblue;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -297,12 +249,12 @@ letter-spacing: 0.5rem;
 
 /*uxtask*/
 .uxtask {
-    background-color: lightsalmon;
+    background-color:white;
 }
 .uxtask .section-title{
     font-size: 5rem;
     font-weight: 300;
-    color: white;
+    color: darkblue;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -321,7 +273,7 @@ letter-spacing: 0.5rem;
 
 /*typetask*/
 .typetask{
-    background-color: navajowhite;
+    background-color: white;
 
 }
 
@@ -335,7 +287,7 @@ letter-spacing: 0.5rem;
 .typetask .section-title{
     font-size: 5rem;
     font-weight: 300;
-    color: white;
+    color: darkblue;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -372,12 +324,12 @@ letter-spacing: 0.5rem;
 
 /*codingtask*/
 .codingtask {
-    background-color: burlywood;
+    background-color: white;
 }
 .codingtask .section-title{
     font-size: 5rem;
     font-weight: 300;
-    color: white;
+    color: darkblue;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: .2rem;
