@@ -180,22 +180,10 @@ a{
     justify-content: space-between;
 }
 
-.section-one {
-    background-color: blueviolet;
-    
-}
-.poster-container {
-    display: flex;
-}
+.navbar-portfolio-title a {
+    color: black;
 
-.section-two{
-    background-color: thistle;
 }
-.section-three{
-    background-color: whitesmoke;
-}
-
-
 /*CARP SECTION*/
 .carptask{
     background-color: white;
