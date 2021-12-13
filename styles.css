@@ -7,8 +7,9 @@ body{
 /* header sytles */
 
 header {
-    background-color: none;
-    padding: none;
+
+    background-color: white;
+    padding: 20px 0px 20px 0px;
     display: flex;
     justify-content: space-between;
     background-repeat: no-repeat;
@@ -45,7 +46,7 @@ a{
 
 
 .nav-container{
-    background: skyblue;
+    background: none;
     
 }
 
@@ -191,8 +192,10 @@ a{
 }
 
 
+.navbar-portfolio-title a {
+    color: black;
 
-
+}
 /*CARP SECTION*/
 .carptask{
     background-color: white;
