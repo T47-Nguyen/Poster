@@ -175,8 +175,7 @@ a{
 }
 /*portfolio*/
 .navbar-container{
-    background-color: black;
-    
+    background-color:hotpink;
     padding: none;
     display: flex;
     justify-content: space-between;
@@ -193,7 +192,7 @@ a{
 
 
 .navbar-portfolio-title a {
-    color: black;
+    color: pink;
 
 }
 /*CARP SECTION*/
