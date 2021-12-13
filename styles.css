@@ -1,13 +1,14 @@
 body{
-    background-color: pink;
+    background-color: white;
     background-repeat: no-repeat;
+    overflow-y: scroll;
 }
 
 /* header sytles */
 
 header {
-    background-color: hotpink;
-    padding: 10px 0px 10px 0px;
+    background-color: none;
+    padding: none;
     display: flex;
     justify-content: space-between;
     background-repeat: no-repeat;
@@ -37,6 +38,7 @@ a{
     color: white;
     display: block;
     padding: 0 1em;
+    font-size: large;
 
 }
 
@@ -67,7 +69,7 @@ a{
 .hero h1{
     display: block;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 2rem;
     position: relative;
     color: transparent;
     animation: text_reveal 1s ease forwards;
@@ -171,29 +173,24 @@ a{
     z-index: 1;
 }
 /*portfolio*/
+.navbar-container{
+    background-color: black;
+    
+    padding: none;
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+}
 .navbar-portfolio{
     text-decoration: none;
-    color: white;
+    color: black;
     display: block;
     padding: 0 1em;   
     display: flex;
     justify-content: space-between;
 }
 
-.section-one {
-    background-color: blueviolet;
-    
-}
-.poster-container {
-    display: flex;
-}
 
-.section-two{
-    background-color: thistle;
-}
-.section-three{
-    background-color: whitesmoke;
-}
 
 
 /*CARP SECTION*/
