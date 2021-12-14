@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: pink;
     background-repeat: no-repeat;
     overflow-y: scroll;
 }
@@ -51,7 +51,7 @@ a{
 }
 
 .hero{
-    background-image: url(./img/hero1-bg.png);
+    background-image: url(./img/hero1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -319,6 +319,11 @@ letter-spacing: 0.5rem;
     background-image: url();
     background-size: cover;
     margin: 10px 5%;
+}
+
+.bilateral-img {
+    border: 2px solid green;
+    width: 400px;
 }
 
 /*codingtask*/
