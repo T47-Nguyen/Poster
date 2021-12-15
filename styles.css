@@ -59,11 +59,11 @@ a{
     color: white;
     display: grid;
     text-align: center;
-    padding: 20em;
+    /*padding: 20em;*/
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 50px;
-    justify-content: 50px;
+    /*justify-content: 50px;*/
     z-index: 1;
     
 }
@@ -197,7 +197,7 @@ a{
 }
 /*CARP SECTION*/
 .carptask{
-    background-color: white;
+    background-color: palegoldenrod;
 
 }
 
