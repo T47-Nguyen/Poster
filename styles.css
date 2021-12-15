@@ -65,6 +65,7 @@ a{
     padding: 0 50px;
     /*justify-content: 50px;*/
     z-index: 1;
+    height:500px;
     
 }
 .hero h1{
