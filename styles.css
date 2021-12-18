@@ -55,17 +55,9 @@ a{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
-    color: white;
-    display: grid;
-    text-align: center;
-    /*padding: 20em;*/
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 50px;
-    /*justify-content: 50px;*/
+    text-align: left;
     z-index: 1;
-    height:500px;
+    height: 100%;
     
 }
 .hero h1{
@@ -177,8 +169,8 @@ a{
 /*portfolio*/
 .navbar-container{
     background-color:hotpink;
-    padding: none;
-    display: flex;
+    padding: 50 px;
+    display: contents;
     justify-content: space-between;
     background-repeat: no-repeat;
 }
@@ -190,7 +182,9 @@ a{
     display: flex;
     justify-content: space-between;
 }
-
+.navbar-container .navbar-tittle a{
+   color: darkblue; 
+}
 
 .navbar-portfolio-title a {
     color: pink;
@@ -263,7 +257,7 @@ letter-spacing: 0.5rem;
 .uxtask .section-title span{
     color: lightpink;
 }
-.uxtask .ux-reflection p{
+/*.uxtask .ux-reflection p{
     font-size: 1.4rem;
     margin-top: 5px;
     line-height: 2.5rem;
@@ -322,10 +316,6 @@ letter-spacing: 0.5rem;
     margin: 10px 5%;
 }
 
-.bilateral-img {
-    border: 2px solid green;
-    width: 400px;
-}
 
 /*codingtask*/
 .codingtask {
