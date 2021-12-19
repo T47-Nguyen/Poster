@@ -2,6 +2,7 @@ body{
     background-color: pink;
     background-repeat: no-repeat;
     overflow-y: scroll;
+    margin: 0%;
 }
 
 /* header sytles */
@@ -20,6 +21,8 @@ header {
 .logo{
     color: darkblue;
     font-weight: bold;
+    width: 120px;
+    cursor: pointer;
    
 }
 .nav-container span{
@@ -33,6 +36,7 @@ ul{
     margin: 0;
     padding: 0;
     display: flex;
+    transition: ;
 }
 a{
     text-decoration: none;
@@ -57,11 +61,12 @@ a{
     background-repeat: no-repeat;
     text-align: left;
     z-index: 1;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     
 }
 .hero h1{
-    display: block;
+    display: grid;
     width: fit-content;
     font-size: 2rem;
     position: relative;
@@ -109,13 +114,13 @@ a{
     display: inline-block;
     padding: 10px 30px;
     color: crimson;
-    background-color: transparent;
+    background-color: white;
     border: 2px solid crimson;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin-top:36px;
-    
+    border-radius: 20px;
     transition: .3s ease background-color;
     transition-property: background-color, color;
 }
@@ -148,7 +153,7 @@ a{
 }
 
 .intro{
-    background-color: white;
+    background-color: hotpink;
     background-image: url(./img/sky.jpg);
     width: 1000px;
     height: 1000px;
@@ -220,15 +225,15 @@ a{
     margin-top: 5px;
     line-height: 2.5rem;
     font-weight: 300;
-letter-spacing: 0.5rem;
+    letter-spacing: 0.5rem;
 }
-.carptask .poster {
+/*.carptask .poster {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-.carptask .a3-poster{
+/*.carptask .a3-poster{
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -236,10 +241,9 @@ letter-spacing: 0.5rem;
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-image: url();
     background-size: cover;
     margin: 10px 5%;
-}
+}*/
 
 /*uxtask*/
 .uxtask {
@@ -343,4 +347,34 @@ letter-spacing: 0.5rem;
 
 
 /*contact*/
+
+/*about me*/
+.about-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/aboutme-zuur-6fGbIwS8PBM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+   
+
+.content{
+    width: 100%;
+    position: absolute;
+
+    text-align: center;
+    color: white;
+    
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 120px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+/*<a href="https://icons8.com/icon/87064/snake">Snake icon by Icons8</a>*/
 
