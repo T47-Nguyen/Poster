@@ -1,78 +1,86 @@
-body{
-    background-color: pink;
-    background-repeat: no-repeat;
-    overflow-y: scroll;
-    margin: 0%;
-}
-
-/* header sytles */
-
-header {
-
-    background-color: hotpink;
-    padding: 20px 0px 20px 0px;
-    display: flex;
-    justify-content: space-between;
-    background-repeat: no-repeat;
-    
-    
-}
-
-.logo{
-    color: darkblue;
-    font-weight: bold;
-    width: 120px;
-    cursor: pointer;
-   
-}
-.nav-container span{
-    color: white;
-}
-.nav-container .cta:hover{
-    color: darkblue;
-}
-ul{
-    list-style-type: none;
+*{
     margin: 0;
-    padding: 0;
-    display: flex;
-    
 }
-a{
-    text-decoration: none;
-    color: white;
-    display: block;
-    padding: 0 1em;
-    font-size: large;
+/* Home page*/
 
-}
-
-
-
-.nav-container{
-    background: none;
-    
-}
-
-.hero{
+.home-container{
+    width: 100%;
+    height: 100vh;
     background-image: url(./img/hero1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    text-align: left;
-    z-index: 1;
-    width: 100%;
-    height: 100vh;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+   
+    font-weight: bold;
+    width: 120px;
+    cursor: pointer;
+    color:white;
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
     
+  
+}
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.home-container.navbar .cta:hover ::after{
+    width: 100%;
+
+}
+.hero p{
+    margin-top: 50px;
+}
+
+.hero {
+    width: 100%;
+    position: absolute;
+
+    text-align: center;
+    color: white;   
 }
 .hero h1{
-    display: grid;
+    display: bl;
     width: fit-content;
     font-size: 2rem;
     position: relative;
     color: transparent;
     animation: text_reveal 1s ease forwards;
     animation-delay: 1s;
+    letter-spacing: normal;
+    margin-top: 120px;
+    align-content: center;
+   
 }
 .hero h1:nth-child(1){
     animation-delay: 1s;
@@ -110,24 +118,9 @@ a{
     animation-delay: 2.5s;
     
 }
-.hero .cta{
-    display: inline-block;
-    padding: 10px 30px;
-    color: crimson;
-    background-color: white;
-    border: 2px solid crimson;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin-top:36px;
-    border-radius: 20px;
-    transition: .3s ease background-color;
-    transition-property: background-color, color;
-}
-.hero .cta:hover{
-    color: white;
-    background-color: crimson;
-}
+
+
+
 /*keyframes*/
 @keyframes text_reveal_box{
     50%{
@@ -147,31 +140,78 @@ a{
 }
 @keyframes text_reveal_name{
     100%{
-        color: darkblue;
+        color: white;
         font-weight: 500px;
     }
 }
 
-.intro{
-    background-color: hotpink;
-    background-image: url(./img/sky.jpg);
-    width: 1000px;
-    height: 1000px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    color: white;
-    display: grid;
+.button{
+    width: 200px;
+    padding: 15px 0;
     text-align: center;
-    padding: 20em;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 50px;
-    justify-content: 50px;
-    z-index: 1;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
+.button span{
+    
+        background: #009688;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    
+}
+.button .span :hover {
+    width: 100%;
+}
+.button :hover {
+    border: none;
+}
+
 /*portfolio*/
+header {
+
+    background-color: hotpink;
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    
+    
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0 1em;
+    font-size: large;
+
+}
+
+
+
+.nav-container{
+    background: none;
+    
+}
 .navbar-container{
     background-color:hotpink;
     padding: 50 px;
@@ -231,27 +271,11 @@ a{
     font-weight: 300;
     letter-spacing: 0.5rem;
 }
-/*.carptask .poster {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-/*.carptask .a3-poster{
-    flex-basis: 80%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding: 30px;
-    border-radius: 10px;
-    background-size: cover;
-    margin: 10px 5%;
-}*/
 
-/*uxtask*/
+
+
 .uxtask {
-    background-color:white;
+    background-color:cornsilk;
 }
 .uxtask .section-title{
     font-size: 5rem;
@@ -264,13 +288,27 @@ a{
 }
 .uxtask .section-title span{
     color: lightpink;
+
 }
-/*.uxtask .ux-reflection p{
-    font-size: 1.4rem;
-    margin-top: 5px;
-    line-height: 2.5rem;
-    font-weight: 300;
-letter-spacing: 0.5rem;
+.uxtask h2{
+    text-align: center;
+  
+}
+.uxtask p{
+ 
+    color: black;
+    flex: 1;
+    padding: 10px;
+}
+.flowchart p{
+        color: black;
+        flex: 1;
+        padding: 10px;
+    
+}
+.flowchart .flowchart-image{
+    flex-direction: column;
+    text-align:center    
 }
 
 /*typetask*/
@@ -322,37 +360,65 @@ letter-spacing: 0.5rem;
     background-image: url();
     background-size: cover;
     margin: 10px 5%;
+  
 }
 
 
 /*codingtask*/
 .codingtask {
-    background-color: white;
+    background-color: bisque;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 15px 25px 15px 15px;
 }
 .codingtask .section-title{
     font-size: 5rem;
     font-weight: 300;
     color: darkblue;
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
+ 
 }
 .codingtask .section-title span{
     color: lightpink;
 }
-.codingtask .coding-reflection p{
-    font-size: 1.4rem;
-    margin-top: 5px;
-    line-height: 2.5rem;
-    font-weight: 300;
-letter-spacing: 0.5rem;
+
+.codingtask .codingcontainer{
+    flex-direction: column;
+    text-align:center ;
+    max-width: 1500px;
+    margin: 0;
+    padding: 100px 0;
+}
+.codingtask h2{
+    text-align: center;
+  
+}
+.worksheet p{
+ 
+    text-align: center;
+    color: black;
+    flex: 1;
+    padding: 10px;
+}
+.worksheet a{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color:crimson;
+    font-weight: italic;
+    
+}
+.worksheet .worksheet1{
+    align-items: center;
 }
 
 
-/*contact*/
 
-/*about me*/
+/* About me*/
 .about-container{
     width: 100%;
     height: 100vh;
@@ -379,6 +445,45 @@ letter-spacing: 0.5rem;
     margin: 20px auto;
     font-weight: 100;
     line-height: 25px;
+    color: black;
 }
 /*<a href="https://icons8.com/icon/87064/snake">Snake icon by Icons8</a>*/
 
+.education{
+    width: 100%;
+    position: absolute;
+
+    text-align: center;
+    color: white;
+    
+
+}
+.education h1{
+    font-size: 70px;
+    margin-top: 500px;
+}
+.education p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: black;
+}
+
+.contact-container{
+    background-image: url(./img/about\ backg.jpg);
+    width: 100%;
+    height: 100vh;
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contact-container .section-title{
+   
+    color: darkblue;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;  
+}
