@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+}
+/* Home page*/
+.home-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/hero1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.home-container.navbar .cta:hover ::after{
+    width: 100%;
+
+}
+.hero {
+    width: 100%;
+    position: absolute;
+    text-align: left;
+    color: white;  
+}
+.hero h1{
+    font-size: 50px;
+    margin-top: 120px;
+    
+   
+}
+.hero p{
+    margin: 20px auto;
+    font-weight: 40;
+    line-height: 25px;
+}
+/*.hero .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: crimson;
+    background-color: white;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top:36px;
+    border-radius: 20px;
+    transition: .3s ease background-color;
+    transition-property: background-color, color;
+}
+.hero .cta:hover{
+    color: white;
+    background-color: crimson;
+}*/
+.button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.button span{
+    
+        background: #009688;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    
+}
+.button .span :hover {
+    width: 100%;
+}
+.button :hover {
+    border: none;
+}
+/* loi can fix button*/
+/* End Home Page*/
+
+/* About me*/
+.about-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/aboutme-zuur-6fGbIwS8PBM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+   
+
+.content{
+    width: 100%;
+    position: absolute;
+
+    text-align: center;
+    color: white;
+    
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 120px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+/*<a href="https://icons8.com/icon/87064/snake">Snake icon by Icons8</a>*/

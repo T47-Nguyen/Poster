@@ -36,7 +36,7 @@ ul{
     margin: 0;
     padding: 0;
     display: flex;
-    transition: ;
+    
 }
 a{
     text-decoration: none;
@@ -200,7 +200,10 @@ a{
     background-color: palegoldenrod;
 
 }
-
+.poster h1{
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
 .carptask .carpcontainer{
     flex-direction: column;
     text-align:center ;
@@ -212,10 +215,11 @@ a{
     font-size: 5rem;
     font-weight: 300;
     color: darkblue;
-    margin-bottom: 10px;
+    margin-bottom: 150px;
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
+
 }
 .carptask .section-title span{
     color: lightpink;
