@@ -487,3 +487,6 @@ letter-spacing: 0.5rem;
     letter-spacing: .2rem;
     text-align: center;  
 }
+.contact-container .contact-items{
+    align-items: center;
+}
